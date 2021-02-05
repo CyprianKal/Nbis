@@ -1,6 +1,6 @@
 {"intents": [
         {"tag": "przywitanie",
-         "patterns": ["cześć", "cest tam kto", "witaj", "dzień dobry", "co tam?","siema","eloo","cześć!","jak ci mija dzień?","miło cię widzieć", "elównina","eldo"],
+         "patterns": ["cześć", "witaj", "dzień dobry", "co tam?","siema","eloo","cześć!","jak ci mija dzień?","miło cię widzieć", "elównina","eldo"],
          "responses": ["Siema!", "Dobrze znów cię widzieć!", "Witaj, jak mogę pomóc?"],
          "context_set": ""
         },
@@ -14,13 +14,10 @@
         "responses": ["Jest dobrze, dzięki że pytasz :)", "Narazie wszystyko okej!", "Jakoś leci hahah"],
         "context_set": ""
         },
-        {"tag": "nieRozumiem",
-                "patterns": [],
-                "responses": ["Mógłbyś zadać pytanie jeszcze raz? Chyba nie zrozumiałem :("],
+        {"tag": "pasty",
+                "patterns": ["opowiedz mi paste", "we opowiedz jakąś paste", "pasta", "znasz jakieś pasty?"],
+                "responses": ["Pasta 1", "Pasta 2"],
                 "context_set": ""
-        }
-        
-        
-        
+        }  
    ]
 }

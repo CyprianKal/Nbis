@@ -114,12 +114,9 @@ net = tflearn.regression(net)
 model = tflearn.DNN(net) #DNN to typ sieci neurnowej, bierze net(naszą sieć którą przed chwilą pisaliśmy) i jej używa
 
 
-try:
-    print("loading model")
-    model.load("model.tflearn")
-except:
-    model.fit(training,output,n_epoch=1000,batch_size=8,show_metric=True) #rozpoczyna "trenowanie" naszego modelu
-    model.save("model.tflearn")#zapisuje nasz model
+
+model.fit(training,output,n_epoch=1000,batch_size=8,show_metric=True) #rozpoczyna "trenowanie" naszego modelu
+model.save("model.tflearn")#zapisuje nasz model
 
 def bag_of_words(s,words):
     bag = [0 for _ in range(len(words))]
@@ -156,7 +153,7 @@ def chat():
                 if tg['tag'] == tag:
                     responses = tg['responses']
             
-            print(random.choice(responses))
+            print(random.choice(responses)) #tutaj jest losowo generowana odpowiedź
 
        
         
