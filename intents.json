@@ -25,7 +25,7 @@
                 "context_set": ""
         },
         {"tag": "pasty",
-                "patterns": ["opowiedz mi paste", "we opowiedz jakąś paste", "pasta", "znasz jakieś pasty?"],
+                "patterns": ["pasta", "pasty", "opowiedz mi pastę","znasz jakieś pasty?", "opowiedz pastę"],
                 "responses": ["Drogie mirki. Piszę tę historię ku przestrodze wszystkim tym, którzy nie rozgryzają mentosów od razu po włożeniu do ust. Otóż ja i moja dziewczyna poszliśmy na studia do różny miast. Po miesiącu rozłąki zdecydowaliśmy się wreszcie spotkać, a jako że byłem bardzo szczęśliwy z tego powodu, postanowiłem zrobić jej minetę. Zawsze mi się to podobało, ale tym razem z jakiegos powodu jej cipka śmierdziała jak martwy papież, a smakowała jeszcze gorzej. Nie chciałem ją urazić, więc wziąłem mentosa. W trakcie lizania, przez przypadek wepchnąłem go w nią, ale na całe szczęście mam zręczne palce i szybko go wygrzebałem, włożyłem z powrotem do ust i rozgryzłem. Niestety to co znalazło się w moich ustach nie było mentosem. Był to guzek rzeżączki. (Należy tutaj zauważyć, że ów guzek był wielkości pierdolonego mentosa) Zamiast lodowej świeżości moje usta wypełniły się ropą. Zacząłem krzyczeć, rzygać i rzucać się po całym pokoju. Kiedy juz nie miałem czym już bełtać i przepłukałem usta, zażądałem żeby powiedziała mi o co tu kurwa chodzi. Okazało się że głupia suka zdradziła mnie z jakimś kolesiem w tydzień po wyjeździe i nawet nie miała pojęcia, że coś z nią nie tak. Od tamtego czasu siedzę w mojej piwnicy, lecząc rzeżączkę w ustach i edukuję ludzi na temat prawidłowej konsumpcji mentosów."],
                 "context_set": ""
         },
@@ -106,6 +106,12 @@
          "Dreszcze, które odczuwasz podczas słuchania muzyki, spowodowane są przez dopaminę uwalniającą do mózgu.",
          "Przeciętny, dorosły Polak wypija 94 litry piwa rocznie. Wychodzi na to, że statystyczny Polak wypija pół litra piwa co drugi dzień."],
                 "context_set": ""
-                }  
+                },
+        {"tag": "żarty",
+        "patterns": ["żart", "żarty","kawał","kawały", "opowiedz mi żart","znasz jakieś żarty?","opowiedz mi kawał","znasz jakieś kawały?", "powiedz jakiś żart","powiedz jakiś kawał"],
+        "responses": ["Dwaj górale kłócą się kto jest silniejszy- ja 300kg- ja400kg- ja 500KGJEDEN WPADŁ DO WODY I KRZYCZY- JA TONĘ - A JA DWIE", 
+        "co łączy prokuratora i psychiatrę urojenia"],
+        "context_set": ""
+        }  
 ]
 }
