@@ -10,6 +10,9 @@ import random #losowość
 import json #pozwala pracować z plikami json
 import pickle
 from os import system, name 
+import speech_recognition as sr
+import pyttsx3 as tts
+import sys
 
 nltk.download('punkt') #naprawia błąd "LookupError: Resource punkt not found. Please use the NLTK Downloader to obtain the resource"
 
@@ -113,11 +116,10 @@ net = tflearn.regression(net)
 
 model = tflearn.DNN(net) #DNN to typ sieci neurnowej, bierze net(naszą sieć którą przed chwilą pisaliśmy) i jej używa
 
-try:
-    model.load(model.tflearn)
-except:
-    model.fit(training,output,n_epoch=1000,batch_size=8,show_metric=True) #rozpoczyna "trenowanie" naszego modelu
-    model.save("model.tflearn")#zapisuje nasz model
+
+
+model.fit(training, output, n_epoch=1000, batch_size=8, show_metric=True)
+model.save("model.tflearn")
 
 def bag_of_words(s,words):
     bag = [0 for _ in range(len(words))]
@@ -131,12 +133,21 @@ def bag_of_words(s,words):
     return numpy.array(bag)
 
 
+########## POBAW SIĘ Z TĄ FUNKCJĄ V
+
 def chat():
     #system('cls')
-    print("Start talking! (type quit to stop)")
+    print("Przywitaj się! (Powiedz 'koniec' żeby wyjść)")
     while True:
-        inp = input("Ty: ")
-        if inp.lower() == "quit":
+        inp = getText()
+        if not inp == 0:
+            print(inp)
+            
+            
+        else:
+            print("Nie udało się rozpoznać...")
+            continue     
+        if inp.lower() == "koniec":
             break
 
         results = model.predict([bag_of_words(inp, words)]) 
@@ -149,14 +160,38 @@ def chat():
         y = numpy.max(results)
         if y < 0.7:
             print("nie rozumiem :(")
+            mow("nie rozumiem")
         else:
             for tg in data["intents"]:
                 if tg['tag'] == tag:
                     responses = tg['responses']
             
-            print(random.choice(responses)) #tutaj jest losowo generowana odpowiedź
+            x = (random.choice(responses)) #tutaj jest losowo generowana odpowiedź
+            print(x)
+            mow(x)
 
-       
-        
+
+#Rozpoznawanie mowy
+r = sr.Recognizer()
+engine = tts.init()
+engine.setProperty('rate', 150)
+def mow(text):
+	engine.say(text)
+	engine.runAndWait()
+
+def getText():
+	with sr.Microphone() as source:
+		try:
+			print("Słucham...")
+			audio = r.listen(source)
+			text = r.recognize_google(audio, language='pl-PL')
+			if text != "":
+				return text
+			return 0
+		except:
+			return 0
+
+
+  
 
 chat()
