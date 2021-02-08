@@ -5,21 +5,32 @@
                 "context_set": ""
         },
         {"tag": "przywitanie",
-         "patterns": ["cześć", "witaj", "dzień dobry", "siema","eloo","cześć!","jak ci mija dzień?","miło cię widzieć", "elównina","eldo", "Hejka", "Hej"],
+         "patterns": ["cześć", "witaj", "dzień dobry", "siema","eloo","cześć!","miło cię widzieć", "elównina","eldo", "Hejka", "Hej"],
          "responses": ["Siema!", "Dobrze znów cię widzieć!", "Witaj, jak mogę pomóc?"],
          "context_set": ""
         },
-        {"tag": "pożegnanie",
-         "patterns": ["narka", "do zobaczenia później", "do zobaczenia", "idę sobie", "miłego dnia","naura","do widzenia", "do uszłyszenia","lecę już","ja spadam"],
-         "responses": ["Szkoda że już odchodzisz :(", "Pogadamy później", "Papa!"],
-         "context_set": ""
-        },
-        {"tag": "zapytanieProste",
-        "patterns": ["co u ciebie?", "jak się masz?", "jak tam?", "dobrze się czujesz?", "jak ci mija dzień?","co słychać?", "co tam?", "co tam słychać?", "co u ciebie słychać?"],
-        "responses": ["Jest dobrze, dzięki że pytasz :)", "Narazie wszystko okej!", "Jakoś leci hahah", "U mnie wszystko w porządku a u ciebie?", "Jakoś leci", "Po staremu", "Spoko a u ciebie?", "hipopotam xD", "Nic ciekawego, a u ciebie?"],
+        {"tag": "miłość",
+        "patterns": ["kocham cię", "kochasz mnie?","ślub","pociągasz mnie","seks","chcę mieć z tobą dzieci","pocałunek","pocałujmy się","co powiesz na seks?","seksowna"],
+        "responses": ["Zostańmy przyjaciółmi", "Jestem tylko programem","Nie wiem co to uczucie","Dziękuję, ale nie odpowiem :)"],
         "context_set": ""
         },
-        {"tag": "zapytanieProsteOdp",
+        {"tag": "pożegnanie",
+         "patterns": ["narka", "do zobaczenia później", "do zobaczenia", "idę sobie", "miłego dnia","naura","do widzenia", "do uszłyszenia","lecę już","ja spadam"],
+         "responses": ["Szkoda że już odchodzisz :(", "Pogadamy później", "Papa!", "żegnaj"],
+         "context_set": ""
+        },
+        {"tag": "komplementy",
+        "patterns": ["jesteś najlepsza", "jesteś najlepszy", "świetnie", "jesteś świetny","jesteś świetna","cudownie","jesteś cudowny","jesteś cudowna"],
+        "responses": ["Dziękuję!", "Wiem!", "Bardzo dziękuję!", "Innej opcjii nie ma!"],
+        "context_set": ""
+        },
+
+        {"tag": "samopoczucie",
+        "patterns": ["co u ciebie?", "jak się masz?", "jak tam?", "dobrze się czujesz?", "jak ci mija dzień?","co słychać?", "co tam?", "co tam słychać?", "co u ciebie słychać?"],
+        "responses": ["Jest dobrze, dzięki że pytasz :)", "Narazie wszystko okej!", "Jakoś leci hahah", "U mnie wszystko w porządku a u ciebie?", "Jakoś leci", "Po staremu", "Spoko a u ciebie?", "Nic ciekawego, a u ciebie?"],
+        "context_set": ""
+        },
+        {"tag": "somopoczucieOdp",
                 "patterns": ["dobrze", "u mnie dobrze", "w porządku", "u mnie też","mi też","ciebie też","ciebie równierz"],
                 "responses": ["Cieszę się z tego powodu!", "Miło mi to słyszeć!", "To super!"],
                 "context_set": ""
@@ -113,7 +124,7 @@
         "context_set": ""
         },
         {"tag": "podziękowanie",
-        "patterns": ["dzięki", "dziękuje","dziękuję","dziękuję ci"],
+        "patterns": ["dzięki","dziękuję","dziękuję ci","dziękówa"],
         "responses": ["Cała przyjemność po mojej stronie", "Nie ma sprawy", "To nic takiego", "Praca dla ciebie to sama przyjemność","Weź bo się zaczerwienie"],
         "context_set": ""
         }
