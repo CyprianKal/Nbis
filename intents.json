@@ -1,7 +1,7 @@
 {"intents": [
-        {"tag": "Przestawienie",
+        {"tag": "Przedstawienie",
                 "patterns": ["kim jesteś?", "jak się nazywasz?", "jak masz na imię?", "przedstaw się"],
-                "responses": ["Mam na imię Nbis i jestem szutuczną inteligencją ", "Jestem Nbis co jest skrótem od \"Naprawdę bardzo inteligentny system\""],
+                "responses": ["Mam na imię N-bis i jestem sztuczną inteligencją ", "Jestem N-bis, co jest skrótem od \"Naprawdę bardzo inteligentny system\""],
                 "context_set": ""
         },
         {"tag": "przywitanie",
@@ -10,18 +10,18 @@
          "context_set": ""
         },
         {"tag": "pożegnanie",
-         "patterns": ["narka", "do zobaczenia później", "do zobaczenia", "idę sobie", "miłego dnia","nauura","do widzenia", "do uszłyszenia"],
+         "patterns": ["narka", "do zobaczenia później", "do zobaczenia", "idę sobie", "miłego dnia","naura","do widzenia", "do uszłyszenia","lecę już","ja spadam"],
          "responses": ["Szkoda że już odchodzisz :(", "Pogadamy później", "Papa!"],
          "context_set": ""
         },
         {"tag": "zapytanieProste",
         "patterns": ["co u ciebie?", "jak się masz?", "jak tam?", "dobrze się czujesz?", "jak ci mija dzień?","co słychać?", "co tam?", "co tam słychać?", "co u ciebie słychać?"],
-        "responses": ["Jest dobrze, dzięki że pytasz :)", "Narazie wszystyko okej!", "Jakoś leci hahah", "U mnie wszystko w porządku a u ciebie?", "Jakoś leci", "Po staremu", "Spoko a u ciebie?", "hipopotam xD", "Nic ciekawego, a u ciebie?"],
+        "responses": ["Jest dobrze, dzięki że pytasz :)", "Narazie wszystko okej!", "Jakoś leci hahah", "U mnie wszystko w porządku a u ciebie?", "Jakoś leci", "Po staremu", "Spoko a u ciebie?", "hipopotam xD", "Nic ciekawego, a u ciebie?"],
         "context_set": ""
         },
         {"tag": "zapytanieProsteOdp",
-                "patterns": ["dobrze", "u mnie dobrze", "w porządku", "u mnie też"],
-                "responses": ["Cieszę się z tego powodu!", "Miło mi to slyszeć!", "To super!"],
+                "patterns": ["dobrze", "u mnie dobrze", "w porządku", "u mnie też","mi też","ciebie też","ciebie równierz"],
+                "responses": ["Cieszę się z tego powodu!", "Miło mi to słyszeć!", "To super!"],
                 "context_set": ""
         },
         {"tag": "pasty",
@@ -30,7 +30,6 @@
                 "context_set": ""
         },
         {"tag": "ciekawostki",
-
                 "patterns": ["ciekawostka", "ciekawostki", "opowiedz mi ciekawostkę","znasz jakieś ciekawostki?","coś ciekawego", "powiedz coś ciekawego"],
                 "responses": ["Korea Północna i Kuba to jedyne miejsca, w których nie można kupić Coca-Coli.",
          "8 Polaków otrzymało Nagrodę Nobla. Są to: Maria Skłodowska-Curie, Henryk Sienkiewicz, Władysław Reymont, Czesław Miłosz, Lech Wałęsa, Józef Rotblat, Wisława Szymborska oraz Olga Tokarczuk.",
@@ -110,21 +109,14 @@
         {"tag": "żarty",
         "patterns": ["żart", "żarty","kawał","kawały", "opowiedz mi żart","znasz jakieś żarty?","opowiedz mi kawał","znasz jakieś kawały?", "powiedz jakiś żart","powiedz jakiś kawał"],
         "responses": ["Dwaj górale kłócą się kto jest silniejszy- ja 300kg- ja400kg- ja 500KGJEDEN WPADŁ DO WODY I KRZYCZY- JA TONĘ - A JA DWIE",
-        "co łączy prokuratora i psychiatrę urojenia"],
+        "co łączy prokuratora i psychiatrę...? Urojenia"],
         "context_set": ""
-      },
-      {"tag": "Life hacki",
-              "patterns": ["dawaj lifehacka", "znasz jakieś lifehacki?", "lifehack", "lifehacki", "lajfak"],
-              "responses": ["Kupując przez Internet drogie przedmioty zawsze staraj sie paczkę otworzyć jeszcze przy kurierze. Jeśli nie masz takiej możliwości, nagraj smartfonem moment jej rozpakowania. W ten sposób udokumentujesz ewentualne uszkodzenia przesyłki i towaru.",
-                       "Nie chcesz przewracać omletu na patelni, bo boisz się, że się rozwali? Wlej go do nagrzanego tostera i zamknij, Omlet zrobi się z obu stron na raz.",
-                       "Staraj się wyłączyć wszystkie sprzęty elektroniczne, z których nie musisz w danej chwili korzystać. Telewizor czy komputer generuje dużo ciepła, które podnosi temperaturę w domu.",
-                       "Zrób zdjęcie planu lekcji i ustaw go jako tapetę wygaszacza ekranu. Dzieki temu szybko nauczysz sie go na pamięć i nie bedziesz sie spóźniał.",
-                       "Do cista na naleśniki dodaj trochę kakao. Dzięki temu twoje naleśniki nabiorą czekoladowego smaku i koloru.",
-                       "Do doniczek włóż filtry do kawy. Dzięki temu sole mineralne z ziemi nie będą wyciekały na zewnatrz przy podlewnaiu",
-                       "Aby ochłodzić się w upalny dzień zaopatrz się w wode termalną. Jest to kosmetyk w aerozolu, który rozpyla sie na twarzy i ciele w postaci delikatnej mgiełki.",
-                       "Pomaluj brzeg zeszytów (z obu stron) na różne kolory. Dzieki temu zaraz po zajrzeniu do plecaka bedziesz wiedział, który zeszyt wyciągnać na daną lekcję.",
-                       "Zamroź w pojemniuku na lód jogurt. Będzie go można dodać do koktajli i smoothie." ],
-              "context_set": ""
-              }
+        },
+        {"tag": "podziękowanie",
+        "patterns": ["dzięki", "dziękuje","dziękuję","dziękuję ci"],
+        "responses": ["Cała przyjemność po mojej stronie", "Nie ma sprawy", "To nic takiego", "Praca dla ciebie to sama przyjemność","Weź bo się zaczerwienie"],
+        "context_set": ""
+        }
+
 ]
 }
